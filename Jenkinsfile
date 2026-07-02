@@ -8,7 +8,7 @@ pipeline {
 
         SONAR_HOST_URL = "https://sonarqube.cicd.kits.ext.educentre.fr"
         SONAR_CREDENTIALS_ID = "juba-sonar-token"
-        SONAR_PROJECT_KEY = "juba-cicd-tasklist-backend"
+        SONAR_PROJECT_KEY = "juba-tasklist-frontend"
 
         BUILD_TAG = "${env.BUILD_NUMBER}"
         IMAGE_TAG = "${DOCKER_IMAGE_NAME}:${BUILD_TAG}"
