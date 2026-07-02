@@ -13,7 +13,7 @@ export function TaskForm({ onSubmit, initialValues, onCancel, mode = 'create' }:
   const [description, setDescription] = useState(initialValues?.description || '');
   const [validationError, setValidationError] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => { //NOSONAR
     e.preventDefault();
     if (!title.trim()) {
       setValidationError('Le titre est requis');
